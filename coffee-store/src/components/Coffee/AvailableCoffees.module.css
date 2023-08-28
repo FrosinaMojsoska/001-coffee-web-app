@@ -1,0 +1,34 @@
+.coffee {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: coffee-appear 1s ease-out forwards;
+  }
+  
+  .coffee ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .coffeesLoading{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  .coffeeError{
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+  
+  }
+  @keyframes coffee-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
